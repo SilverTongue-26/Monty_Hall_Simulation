@@ -24,7 +24,7 @@ def music():
     pygame.mixer.music.play()
 
 
-def show_car(money, state):
+def show_money(money, state):
     my_font = pygame.font.SysFont("forte", 32)
     display_surface = pygame.display.set_mode((X, Y))
     money1 = pygame.image.load('money_1.jpg')
@@ -205,4 +205,4 @@ while True:
                     state = 4
                     pygame.display.update()
                     print("YOU COULD HAVE WON BY SWITCHING!!")
-            show_car(money, state)
+            show_money(money, state)
